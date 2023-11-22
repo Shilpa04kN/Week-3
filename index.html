@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>E-commerce Product Page</title>
+</head>
+<body>  
+    <header>
+        <h1>Product Page</h1>
+        <div id="cart" onclick="openCart()">
+            <span id="cart-count">0</span>
+            <img src="./cart-icon.png" alt="Shopping Cart" height="100" width="100">
+        </div>
+    </header>
+
+    <main>
+        <section class="product">
+            <img src="biscuit.png" alt="Product 1">
+            <h2>Product 1</h2>
+            <p class="description">Biscuits are typically hard, flat, and unleavened. They are usually sweet and may be made with sugar, chocolate, icing, jam, ginger, or cinnamon.</p>
+            <p class="price">$19.99</p>
+            <button class="add-to-cart" onclick="addToCart(1)">Add to Cart</button>
+        </section>
+
+        <section class="product">
+            <img src="chips.png" alt="Product 2">
+            <h2>Product 2</h2>
+            <p class="description">Chips are long, thin pieces of potato fried in oil or fat and eaten hot, usually with a meal. </p>
+            <p class="price">$29.99</p>
+            <button class="add-to-cart" onclick="addToCart(2)">Add to Cart</button>
+        </section>
+        <section class="product">
+            <img src="chocolate4.png" alt="Product 3">
+            <h2>Product 3</h2>
+            <p class="description">chocolate, food product made from cocoa beans, consumed as candy and used to make beverages and to flavour or coat various confections and bakery products.</p>
+            <p class="price">$49.99</p>
+            <button class="add-to-cart" onclick="addToCart(3)">Add to Cart</button>
+        </section>
+        <section class="product">
+            <img src="fruits.png" alt="Product 4">
+            <h2>Product 4</h2>
+            <p class="description">A fruit is the fleshy or dry ripened ovary of a flowering plant, enclosing the seed or seeds.</p>
+            <p class="price">$85.99</p>
+            <button class="add-to-cart" onclick="addToCart(4)">Add to Cart</button>
+        </section>
+        <section class="product">
+            <img src="rice.png" alt="Product 5">
+            <h2>Product 5</h2>
+            <p class="description">Rice is the seed of a semi-aquatic grass (Oryza sativa) that is cultivated extensively in warm climates in many countries</p>
+            <p class="price">$500</p>
+            <button class="add-to-cart" onclick="addToCart(5)">Add to Cart</button>
+        </section>
+        <section class="product">
+            <img src="pens.png" alt="Product 6">
+            <h2>Product 6</h2>
+            <p class="description">A pen is a common writing instrument that applies ink to a surface, usually paper, for writing or drawing.</p>
+            <p class="price">$50</p>
+            <button class="add-to-cart" onclick="addToCart(6)">Add to Cart</button>
+
+        </section>
+        <section class="product">
+            <img src="book.png" alt="Product 7">
+            <h2>Product 7</h2>
+            <p class="description">A book's content give readers a glimpse into what the book is about. </p>
+            <p class="price">$80</p>
+            <button class="add-to-cart" onclick="addToCart(7)">Add to Cart</button>
+        </section>
+        <section class="product">
+            <img src="shampoos.png" alt="Product 8">
+            <h2>Product 8</h2>
+            <p class="description">Shampoo is a hair care product, typically in the form of a viscous liquid, that is used for cleaning hair. </p>
+            <p class="price">$250</p>
+            <button class="add-to-cart" onclick="addToCart(8)">Add to Cart</button>
+        </section>
+        <section class="product">
+            <img src="wafers.png" alt="Product 9">
+            <h2>Product 9</h2>
+            <p class="description">A wafer is a crisp, often sweet, very thin, flat, light biscuit</p>
+            <p class="price">$30.99</p>
+            <button class="add-to-cart" onclick="addToCart(9)">Add to Cart</button>
+        </section>
+        <section class="product">
+            <img src="bags.png" alt="Product 10">
+            <h2>Product 10</h2>
+            <p class="description">A bag is a kind of soft container. It can hold or carry things.</p>
+            <p class="price">$1000</p>
+            <button class="add-to-cart" onclick="addToCart(10)">Add to Cart</button>
+        </section>
+
+    </main>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCart()">&times;</span>
+            <h2>Your Cart</h2>
+            <ul id="cart-items-list"></ul>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
